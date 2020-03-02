@@ -55,6 +55,7 @@ public abstract class StringUtils {
 	 * 
 	 * @param str 给出的字符串, 可以为null.
 	 * @return String 变换后的字符串.
+	 * @author ripper [RipperF@hotmail.com]
 	 */
 	public static String getUpperStr(String str) {
 		if (null == str || str.length() == 0) {
@@ -327,4 +328,5 @@ public abstract class StringUtils {
 		return false;
 
 	}
+
 }
