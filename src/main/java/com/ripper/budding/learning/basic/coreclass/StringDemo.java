@@ -1,4 +1,4 @@
-package com.ripper.budding.learning.basic;
+package com.ripper.budding.learning.basic.coreclass;
 
 
 import java.util.StringJoiner;

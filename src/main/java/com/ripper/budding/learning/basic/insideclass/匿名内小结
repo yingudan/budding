@@ -1,0 +1,5 @@
+Java的内部类可分为Inner Class、Anonymous Class和Static Nested Class三种：
+
+Inner Class和Anonymous Class本质上是相同的，都必须依附于Outer Class的实例，即隐含地持有Outer.this实例，并拥有Outer Class的private访问权限；
+
+Static Nested Class是独立类，但拥有Outer Class的private访问权限。

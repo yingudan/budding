@@ -11,7 +11,7 @@ package com.ripper.budding.learning.basic.reflex;
 public class ReflexFiled {
 
     public static void main(String[] args) throws NoSuchFieldException {
-        Class studentClass= Student.class;
+        Class studentClass = Student.class;
         // 获取public字段"score":
         System.out.println(studentClass.getField("score"));
 
