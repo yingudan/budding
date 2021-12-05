@@ -108,12 +108,12 @@ public class StringDemo {
      * 类似用分隔符拼接数组的需求很常见，所以Java标准库还提供了一个StringJoiner来干这个事：
      */
     public static  void hightFixString(){
-//        String[] names = {"Bob", "Alice", "Grace"};
-//        StringJoiner sj = new StringJoiner(", ");
-//        for (String name : names) {
-//            sj.add(name);
-//        }
-//        System.out.println(sj.toString());
+        String[] names = {"Bob", "Alice", "Grace"};
+        StringJoiner sj = new StringJoiner(", ");
+        for (String name : names) {
+            sj.add(name);
+        }
+        System.out.println(sj.toString());
     }
 
 }

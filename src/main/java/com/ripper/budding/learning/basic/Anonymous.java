@@ -24,7 +24,6 @@ public class Anonymous {
 
         void asyncHello() {
             Runnable r = new Runnable() {
-                @Override
                 public void run() {
                     System.out.println("Hello, " + Outer.this.name);
                 }
