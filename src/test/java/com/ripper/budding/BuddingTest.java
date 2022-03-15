@@ -1,17 +1,25 @@
 package com.ripper.budding;
 
 import com.ripper.budding.utils.BusinessUtils;
+import com.ripper.budding.utils.DemoDto;
+import com.ripper.budding.utils.ReflexUtils;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class BuddingTest {
 
     public static void main(String[] args) {
+        getObjectFields();
+    }
 
-        BigDecimal end = BusinessUtils.add(BigDecimal.ONE, BigDecimal.TEN);
 
-
-
+    public static void getObjectFields() {
+        DemoDto dto = new DemoDto();
+        dto.setAge(2);
+        dto.setName("demo");
+        List<String> objectFields = ReflexUtils.getObjectFields(dto);
+        System.out.println(objectFields);
     }
 
 }
