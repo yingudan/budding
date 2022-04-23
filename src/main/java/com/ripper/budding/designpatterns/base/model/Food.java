@@ -16,11 +16,11 @@ public class Food {
 
     private String condiment;
 
-    private void addSpicy(String spicy) {
+    public void addSpicy(String spicy) {
         this.spicy = spicy;
     }
 
-    private void addCondiment(String condiment) {
+    public void addCondiment(String condiment) {
         this.condiment = condiment;
     }
 

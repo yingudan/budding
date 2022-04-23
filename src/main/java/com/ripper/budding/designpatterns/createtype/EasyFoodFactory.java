@@ -5,32 +5,30 @@ import com.ripper.budding.designpatterns.base.model.HuangMenChicken;
 import com.ripper.budding.designpatterns.base.model.NeiJiangNoodle;
 
 /**
- * 工厂模式
+ * 简单工厂模式
  *
  * @Auther: yingd [RipperF@hotmail.com]
- * @Date:2022-04-20
+ * @Date:2022-04-21
  * @Description:com.ripper.budding.designpatterns.createtype
  * @Version:1.0
  **/
-public class FoodFactory {
 
-    /**
-     * @param foodName
-     * @return
-     */
-    public static Food makeFood(String foodName) {
-        if (foodName.equals("noodle")) {
+
+public class EasyFoodFactory {
+
+    public static Food makeFood(String name) {
+        if (name.equals("noodle")) {
             Food noodle = new NeiJiangNoodle();
-            noodle.setSpicy("more");
+            noodle.addSpicy("more");
             return noodle;
-        } else if (foodName.equals("chicken")) {
+        } else if (name.equals("chicken")) {
             Food chicken = new HuangMenChicken();
-            chicken.setCondiment("potato");
+            chicken.addCondiment("potato");
             return chicken;
         } else {
             return null;
         }
-
     }
+
 
 }

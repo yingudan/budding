@@ -8,8 +8,6 @@ import com.ripper.budding.designpatterns.base.model.Food;
  * @Description:com.ripper.budding.designpatterns.Interface
  * @Version:1.0
  **/
-
-
 public interface FoodFactory {
 
     Food makeFood(String name);
