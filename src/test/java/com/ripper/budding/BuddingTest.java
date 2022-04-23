@@ -18,6 +18,7 @@ public class BuddingTest {
         DemoDto dto = new DemoDto();
         dto.setAge(2);
         dto.setName("demo");
+        dto.setName("demo");
         List<String> objectFields = ReflexUtils.getObjectFields(dto);
         System.out.println(objectFields);
     }

@@ -1,0 +1,21 @@
+流
+在Java IO中，流是一个核心的概念。流从概念上来说是一个连续的数据流。
+你既可以从流中读取数据，也可以往流中写数据。流与数据源或者数据流向的媒介相关联。
+在Java IO中流既可以是字节流(以字节为单位进行读写)，也可以是字符流(以字符为单位进行读写)。
+
+一个程序需要InputStream或者Reader从数据源读取数据，需要OutputStream或者Writer将数据写入到目标媒介中。
+InputStream和Reader与数据源相关联，OutputStream和writer与目标媒介相关联。
+
+Java IO的用途和特征
+文件访问
+网络访问
+内存缓存访问
+线程内部通信(管道)
+缓冲
+过滤
+解析
+读写文本 (Readers / Writers)
+读写基本类型数据 (long, int etc.)
+读写对象
+
+
