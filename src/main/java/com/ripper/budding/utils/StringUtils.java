@@ -148,7 +148,6 @@ public abstract class StringUtils {
      * @param str       给出的字符串, 可以为null.
      * @param separator 分隔符可以为null和"".
      * @return 拆分后的字符串数组.
-     * @see #tokenizeToArray
      */
     public static String[] delimitedToArray(String str, String separator) {
         if (null == str) {
